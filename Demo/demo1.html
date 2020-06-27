@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.css"/>
+      <link rel="stylesheet" href="style.css"/>
+   </head>
+   <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+      <h1>Coderjs</h1>
+      <p>Some Popular Programming languages</p>
+      <coderjs language=vbnet index=1 display=block>Public Module a
+         Public sub main() 
+         Dim abc = "%ABC%" 
+         msgbox(abc) 
+         End sub 
+         End module
+      </coderjs>
+      <coderjs language=csharp index=1 display=none>public static class a 
+         {
+         public static void main()
+         { 
+         var abc = "%ABC%";
+         msgbox(abc); 
+         } 
+         }
+      </coderjs>
+      <coderjs language=cpp index=1 display=none>
+         using namespace std;
+         int main()
+         {
+         cout<<"Hello World!";
+         return 0;
+         }
+      </coderjs>
+      <coderjs language=java index=1 display=none>
+         public class MyFirstJavaProgram {
+         public static void main(String []args) {
+         System.out.println("Hello World"); // prints Hello World
+         }
+         }
+      </coderjs>
+      <coderjs language=python index=1 display=none>
+         x = 1
+         if x == 1:
+         print("x is 1.")
+      </coderjs>
+      <br><br><br><br>
+      <p>A small example to show server side languages</p>
+      <coderjs language=html index=2 display=block >
+         &lt;!DOCTYPE html&gt;
+         &lt;html&gt;
+         &lt;head&gt;
+         &lt;title&gt;Page Title&lt;/title&gt;
+         &lt;/head&gt;
+         &lt;body&gt;
+         &lt;h1&gt;This is a Heading&lt;/h1&gt;
+         &lt;p&gt;This is a paragraph.&lt;/p&gt;
+         &lt;/body&gt;
+         &lt;/html&gt;
+      </coderjs>
+      <coderjs language=css index=2 display=none >
+         body {
+         background-color: lightblue;
+         }
+         h1 {
+         color: white;
+         text-align: center;
+         }
+         p {
+         font-family: verdana;
+         font-size: 20px;
+         }
+      </coderjs>
+      <coderjs language=javascript index=2 display=none>
+         function msg()
+         {  
+         alert("Hello Javatpoint");  
+         }  
+      </coderjs>
+      <coderjs language=php index=2 display=none >
+         &lt;?php echo "Hello world"; ?>
+      </coderjs>
+      <script src="script.js"></script>
+      <script>window.onload = StartAction();</script>
+   </body>
+</html>

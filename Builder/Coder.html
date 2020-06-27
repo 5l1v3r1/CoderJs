@@ -1,0 +1,314 @@
+<meta charset=utf8>
+<style>
+   textarea {width: 300px; height: 98px;background-color:#f2f2f2;}
+   select {width: 300px;background-color:#d9d9d9;}
+   button {height:50px;color:black;font-size: 25px;border: 5px solid black;background-color:#d9d9d9;}
+   .languages {line-height:20px;width: 300px;background-color:#d9d9d9;}
+</style>
+<center>
+<h1>Coderjs - Coder.html</h1>
+<p>Coder will automatically attempt to generate HTML code. Just select your options and click generate</p>
+<div id="coder">
+   <input list="languages" class="languages" value="visual-basic">
+   <br>
+   <textarea placeholder="Public Module a
+      Public sub main() 
+      Dim abc = '%ABC%' 
+      msgbox(abc) 
+      End sub 
+      End module"></textarea>
+   <br><br>
+   <input list="languages" class="languages" value="csharp">
+   <br>
+   <textarea
+      placeholder="Public Module a
+      Public sub main() 
+      Dim abc = '%ABC%' 
+      msgbox(abc) 
+      End sub 
+      End module"></textarea><br>
+</div>
+<button onclick="Insert()" style="width:75px;">+</button>
+<button onclick="Remove()" style="width:75px;">-</button><br><br><button onclick="Generate()" style="width:300px;">Generate</button>
+<br><br>
+<br><br>
+<pre><code id="result"></code></pre>
+<script src="Coder.js"></script>
+<datalist id="languages">
+   <option value="properties">
+   <option value="asm6502">
+   <option value="abap">
+   <option value="al">
+   <option value="antlr4">
+   <option value="g4">
+   <option value="apl">
+   <option value="aql">
+   <option value="arff">
+   <option value="aspnet">
+   <option value="actionscript">
+   <option value="ada">
+   <option value="agda">
+   <option value="apacheconf">
+   <option value="applescript">
+   <option value="arduino">
+   <option value="asciidoc">
+   <option value="adoc">
+   <option value="abnf">
+   <option value="autohotkey">
+   <option value="autoit">
+   <option value="basic">
+   <option value="bbcode">
+   <option value="shortcode">
+   <option value="bnf">
+   <option value="rbnf">
+   <option value="bash">
+   <option value="shell">
+   <option value="batch">
+   <option value="bison">
+   <option value="brainfuck">
+   <option value="brightscript">
+   <option value="bro">
+   <option value="c">
+   <option value="csharp">
+   <option value="cpp">
+   <option value="clike">
+   <option value="cil">
+   <option value="cmake">
+   <option value="css">
+   <option value="css-extras">
+   <option value="clojure">
+   <option value="coffeescript">
+   <option value="coffee">
+   <option value="concurnas">
+   <option value="csp">
+   <option value="crystal">
+   <option value="d">
+   <option value="dax">
+   <option value="dns-zone-file">
+   <option value="dns-zone">
+   <option value="dart">
+   <option value="diff">
+   <option value="django">
+   <option value="jinja2">
+   <option value="docker">
+   <option value="dockerfile">
+   <option value="ejs">
+   <option value="eta">
+   <option value="erb">
+   <option value="eiffel">
+   <option value="elixir">
+   <option value="elm">
+   <option value="etlua">
+   <option value="erlang">
+   <option value="excel-formula">
+   <option value="xlsx">
+   <option value="xls">
+   <option value="ebnf">
+   <option value="fsharp">
+   <option value="factor">
+   <option value="firestore-security-rules">
+   <option value="flow">
+   <option value="fortran">
+   <option value="ftl">
+   <option value="gcode">
+   <option value="gdscript">
+   <option value="gedcom">
+   <option value="glsl">
+   <option value="gml">
+   <option value="gamemakerlanguage">
+   <option value="gherkin">
+   <option value="git">
+   <option value="go">
+   <option value="graphql">
+   <option value="groovy">
+   <option value="hcl">
+   <option value="hlsl">
+   <option value="http">
+   <option value="hpkp">
+   <option value="hsts">
+   <option value="haml">
+   <option value="handlebars">
+   <option value="haskell">
+   <option value="hs">
+   <option value="haxe">
+   <option value="ichigojam">
+   <option value="icon">
+   <option value="inform7">
+   <option value="ini">
+   <option value="io">
+   <option value="j">
+   <option value="jq">
+   <option value="js-extras">
+   <option value="js-templates">
+   <option value="jsstacktrace">
+   <option value="jsdoc">
+   <option value="json5">
+   <option value="json">
+   <option value="webmanifest">
+   <option value="jsonp">
+   <option value="java">
+   <option value="javastacktrace">
+   <option value="javadoc">
+   <option value="javadoclike">
+   <option value="javascript">
+   <option value="js">
+   <option value="jolie">
+   <option value="julia">
+   <option value="keyman">
+   <option value="kotlin">
+   <option value="llvm">
+   <option value="lolcode">
+   <option value="latex">
+   <option value="tex">
+   <option value="context">
+   <option value="latte">
+   <option value="less">
+   <option value="lilypond">
+   <option value="ly">
+   <option value="liquid">
+   <option value="lisp">
+   <option value="emacs">
+   <option value="elisp">
+   <option value="emacs-lisp">
+   <option value="livescript">
+   <option value="lua">
+   <option value="matlab">
+   <option value="mel">
+   <option value="makefile">
+   <option value="markdown">
+   <option value="md">
+   <option value="markup">
+   <option value="html">
+   <option value="xml">
+   <option value="svg">
+   <option value="mathml">
+   <option value="ssml">
+   <option value="atom">
+   <option value="rss">
+   <option value="markup-templating">
+   <option value="mizar">
+   <option value="monkey">
+   <option value="moonscript">
+   <option value="moon">
+   <option value="n1ql">
+   <option value="n4js">
+   <option value="n4jsd">
+   <option value="nasm">
+   <option value="neon">
+   <option value="nsis">
+   <option value="nand2tetris-hdl">
+   <option value="nim">
+   <option value="nix">
+   <option value="ocaml">
+   <option value="objectivec">
+   <option value="objc">
+   <option value="opencl">
+   <option value="oz">
+   <option value="parigp">
+   <option value="pcaxis">
+   <option value="px">
+   <option value="php">
+   <option value="php-extras">
+   <option value="phpdoc">
+   <option value="plsql">
+   <option value="parser">
+   <option value="pascal">
+   <option value="objectpascal">
+   <option value="pascaligo">
+   <option value="peoplecode">
+   <option value="pcode">
+   <option value="perl">
+   <option value="powerquery">
+   <option value="pq">
+   <option value="mscript">
+   <option value="powershell">
+   <option value="processing">
+   <option value="prolog">
+   <option value="protobuf">
+   <option value="pug">
+   <option value="puppet">
+   <option value="pure">
+   <option value="purebasic">
+   <option value="pbfasm">
+   <option value="python">
+   <option value="py">
+   <option value="q">
+   <option value="qml">
+   <option value="qore">
+   <option value="r">
+   <option value="racket">
+   <option value="rkt">
+   <option value="jsx">
+   <option value="tsx">
+   <option value="reason">
+   <option value="regex">
+   <option value="renpy">
+   <option value="rpy">
+   <option value="rip">
+   <option value="roboconf">
+   <option value="robotframework">
+   <option value="robot">
+   <option value="ruby">
+   <option value="rb">
+   <option value="rust">
+   <option value="sas">
+   <option value="sparql">
+   <option value="rq">
+   <option value="sqf">
+   <option value="sql">
+   <option value="sass">
+   <option value="scss">
+   <option value="scala">
+   <option value="scheme">
+   <option value="shell-session">
+   <option value="smalltalk">
+   <option value="smarty">
+   <option value="solidity">
+   <option value="sol">
+   <option value="solution-file">
+   <option value="sln">
+   <option value="soy">
+   <option value="splunk-spl">
+   <option value="iecst">
+   <option value="stylus">
+   <option value="swift">
+   <option value="t4-cs">
+   <option value="t4">
+   <option value="t4-vb">
+   <option value="t4-templating">
+   <option value="tap">
+   <option value="toml">
+   <option value="tcl">
+   <option value="tt2">
+   <option value="textile">
+   <option value="turtle">
+   <option value="trig">
+   <option value="twig">
+   <option value="typescript">
+   <option value="ts">
+   <option value="unrealscript">
+   <option value="uscript">
+   <option value="uc">
+   <option value="vbnet">
+   <option value="vhdl">
+   <option value="vala">
+   <option value="velocity">
+   <option value="verilog">
+   <option value="visual-basic">
+   <option value="vb">
+   <option value="warpscript">
+   <option value="wasm">
+   <option value="wiki">
+   <option value="xml-doc">
+   <option value="xquery">
+   <option value="xeora">
+   <option value="xeoracube">
+   <option value="xojo">
+   <option value="yaml">
+   <option value="yml">
+   <option value="zig">
+   <option value="nginx">
+   <option value="rest">
+   <option value="vim">
+</datalist>
+
