@@ -18,16 +18,20 @@ function Insert() {
 	coder.appendChild(br.cloneNode(true));
 	coder.appendChild(br.cloneNode(true));
 }
+
+
 function escapeHtml(unsafe) {
-	return unsafe
-		.replace(/&/g, "&")
-		.replace(/</g, "<")
-		.replace(/>/g, ">")
-		.replace(/"/g, """)
-		.replace(/'/g, "'");
-}
-var a1 = '<!DOCTYPE html><html><head><meta charset="UTF8"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.css"/><link rel="stylesheet" href="style.css"/></head><body><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"><\/script>';
-var a3 = '<script src="script.js"><\/script><script>window.onload = StartAction();<\/script><\/body><\/html>';
+    return unsafe
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+ }
+
+
+var a1 = '<!DOCTYPE html><html><head><meta charset="UTF8"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DarkSecDevelopers/CoderJs/Codes/style.min.css"/></head><body><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"><\/script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"><\/script>';
+var a3 = '<script src="https://cdn.jsdelivr.net/gh/DarkSecDevelopers/CoderJs/Codes/script.min.js"><\/script><script>window.onload = StartAction();<\/script><\/body><\/html>';
 function Generate() {
 	document.getElementById("result").innerHTML = escapeHtml(a1);
 	var display = "block";
