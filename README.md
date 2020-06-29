@@ -23,7 +23,7 @@ id="coderjs"          &lt;!-- Leave as it was. Wrapper will deal with it  --&gt;
 //For example, I am using javascript
 document.write("Hello World");
 &lt;/textarea&gt;
-</code><pre><br /><br /> 
+</code></pre><br /><br /> 
 
 <p><strong>*language</strong></p>
 <p>Define name of language which you will put as code in textarea, Currently, <a href="https://github.com/DarkSecDevelopers/CoderJs/blob/master/Languages/languages.txt">these languages are suppoerted</a>,<br /> At a time, only language allowed for 1 textarea.<br /> Example:<strong> language="vbnet"</strong> , <strong>language="csharp"</strong> , <strong>language="cpp"</strong> , <strong>language="python"</strong></p>
