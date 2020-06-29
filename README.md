@@ -3,7 +3,8 @@
 <center><img src="https://raw.githubusercontent.com/DarkSecDevelopers/CoderJs/master/Demo/demo.png" /></center>
 <h2>Demo</h2>
 <p>You can see live demos below</p>
-<p><a href="https://codepen.io/graysuit/pen/XWXaxjY">demo1</a><br /> <a href="https://codepen.io/graysuit/pen/LYGjgba">demo2</a><br /> <a href="https://codepen.io/graysuit/pen/GRovYrJ">demo3</a></p>
+<p><a href="https://codepen.io/graysuit/pen/XWXaxjY">demo1 - demo-html_css_js.html</a><br /> <a href="https://codepen.io/graysuit/pen/LYGjgba">demo2 - demo_desktop_languages.html</a><br /> <a href="https://codepen.io/graysuit/pen/GRovYrJ">demo3 - 
+demo_php_blog.html</a></p>
 <h2>How to use (for community):</h2>
 <p>Just open Builder/Coder.html, Select your settings and Click Generate.</p>
 <p>It will generate html code automatically at bottom.</p>
