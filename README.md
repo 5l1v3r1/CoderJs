@@ -39,7 +39,7 @@ document.write("Hello World");
 &lt;script src=&quot;https://raw.githack.com/DarkSecDevelopers/CoderJs/master/Codes/script.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
 //Choose your theme
-//SetTheme(&quot;-okaidia&quot;);
+SetTheme(&quot;-okaidia&quot;);
 //SetTheme(&quot;-solarizedlight&quot;);	 
 //SetTheme(&quot;-coy&quot;);
 //SetTheme(&quot;-dark&quot;);
