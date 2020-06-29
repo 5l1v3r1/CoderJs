@@ -27,7 +27,7 @@ var i = Coderjs.length;
 while (i--) {if (Coderjs[i].id == "coderjs") {var h = Coderjs[i].outerHTML;Coderjs[i].outerHTML = h.substring(0, 9).replace("<textarea", "<coderjs") + h.substring(9, h.length - 11) + h.substring(h.length - 11, h.length).replace("</textarea>", "</coderjs>");}}
 for (var i = 0; i < Coder.length; i++) {CreateElement(Coder[i].getAttribute("language"),Coder[i].innerHTML,Coder[i].getAttribute("index"),Coder[i].getAttribute("display"),i);}
 var Codejs = document.getElementById('coderjs');
-var Styles = ["https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.css","https://cdn.jsdelivr.net/gh/DarkSecDevelopers/CoderJs/Codes/style.min.css"];
+var Styles = ["https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.css","https://raw.githack.com/DarkSecDevelopers/CoderJs/master/Codes/style.min.css"];
 
 var Scripts = ["prism.min.js","plugins/toolbar/prism-toolbar.min.js","plugins/line-numbers/prism-line-numbers.min.js","plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js","plugins/autoloader/prism-autoloader.min.js"];
 var main = "https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/";
