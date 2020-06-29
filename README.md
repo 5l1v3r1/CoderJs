@@ -9,10 +9,9 @@ demo_php_blog.html</a></p>
 <p>Just open Builder/Coder.html, Select your settings and Click Generate.</p>
 <p>It will generate html code automatically at bottom.</p>
 <p>You can embed this code in any site or play locally with any broswer.</p>
-<p>&nbsp;</p>
 <h2>How to use (for developers):</h2>
 <h5>Step:1 (Put code with settings)</h5>
-<p>I am always use textarea for displaying codes,<br /> Because it don't need to escape characters,<br /> Currently, github don't allow running js,<br /> So we can't show live demo here.</p>
+<p>I am always use textarea for displaying codes,<br /> Because it don't need to escape characters,<br /> Currently, github don't allow running js,<br /> So we can't show live demo here.
 <pre><code>
 &lt;textarea 
 language="javascript" &lt;!-- Define your language                        --&gt;
@@ -24,15 +23,14 @@ id="coderjs"          &lt;!-- Leave as it was. Wrapper will deal with it  --&gt;
 //For example, I am using javascript
 document.write("Hello World");
 &lt;/textarea&gt;
-</code></pre><br /><br /> 
-
+</code></pre></p>
 <p><strong>*language</strong></p>
 <p>Define name of language which you will put as code in textarea, Currently, <a href="https://github.com/DarkSecDevelopers/CoderJs/blob/master/Languages/languages.txt">these languages are suppoerted</a>,<br /> At a time, only language allowed for 1 textarea.<br /> Example:<strong> language="vbnet"</strong> , <strong>language="csharp"</strong> , <strong>language="cpp"</strong> , <strong>language="python"</strong></p>
-<p><br /> <strong>*Index</strong></p>
+<p><strong>*Index</strong></p>
 <p>Define plot number where code should be embed,<br /> Let's suppose I have 3 code snippets,<br /> I want to show them all in one place with tabs,<br /> When specific tab pressed then specific language should be shown at a time,<br /> So I will have to give same plot number to all of them.<br /> Example: <strong>index="0"</strong> , <strong>index="4"</strong> , <strong>index="5"</strong> , <strong>index="8"</strong></p>
-<p><br /> <strong>*Display</strong></p>
+<p><strong>*Display</strong></p>
 <p>Define that should your code be visible at startup.<br /> Example: <strong>display="none"</strong> , <strong>display="block"</strong></p>
-<p><br /> <strong>*ID</strong></p>
+<p><strong>*ID</strong></p>
 <p><strong>id="coderjs"</strong> should remain as it was,<br /> It is for wrapper only, Wrapper will automatically detect textareas with id coderjs.</p>
 <h5>Step:2 (Put script with settings)</h5>
 <p>Add this code at the end of page.</p>
