@@ -1,0 +1,58 @@
+<textarea language="html" index="1" display="block" id="coderjs">
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Page Title</title> 
+</head> 
+<body> 
+<h1>This is a Heading</h1> 
+<p>This is a paragraph.</p> 
+</body> 
+</html> 
+</textarea>
+  
+<textarea language="css" index="1" display="none" id="coderjs">
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</textarea>
+
+<textarea language="js" index="1" display="none" id="coderjs">
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(IsGreator);
+
+function IsGreator(value, index, array) 
+{
+  alert('Is ' + value + ' Greater Than 18 = ' + (value > 18));
+} 
+</textarea>
+
+<script src="https://cdn.jsdelivr.net/gh/DarkSecDevelopers/CoderJs/Codes/script.min.js"></script>
+<script>
+//Choose your theme
+//SetTheme("-solarizedlight");	 
+//SetTheme("-coy");
+//SetTheme("-dark");
+//SetTheme("-funky");
+//SetTheme("-tomorrow"); 
+SetTheme("-twilight");
+//SetTheme(""); //Default theme
+//SetTheme("-okaidia");
+
+//Should tab be displayed ? 
+//Yes = true and No = false
+ShowTabs = true; //true or false 
+
+//Don't touch, Leave as it was.
+window.onload = StartAction();
+</script>

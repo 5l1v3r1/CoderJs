@@ -3,37 +3,65 @@
    textarea {width: 300px; height: 98px;background-color:#f2f2f2;}
    select {width: 300px;background-color:#d9d9d9;}
    button {height:50px;color:black;font-size: 25px;border: 5px solid black;background-color:#d9d9d9;}
-   .languages {line-height:20px;width: 300px;background-color:#d9d9d9;}
+   .languages,.themes {line-height:20px;width: 300px;background-color:#d9d9d9;}
+   .ShowTabs,.themes {line-height:20px;width: 148px;background-color:#d9d9d9;}
 </style>
 <center>
 <h1>Coderjs - Coder.html</h1>
 <p>Coder will automatically attempt to generate HTML code. Just select your options and click generate</p>
+<p>Select desired theme--|--Should tabs display</p>
 <div id="coder">
+<select id="themes" class="themes">
+   <option value="-Default">-Default</option>
+   <option value="-okaidia">-okaidia</option>
+   <option value="-solarizedlight">-solarizedlight</option>
+   <option value="-coy">-coy</option>
+   <option value="-dark">-dark</option>
+   <option value="-funky">-funky</option>
+   <option value="-tomorrow">-tomorrow</option>
+   <option value="-dark">-dark</option>
+   <option value="-twilight">-twilight</option>
+</select>
+
+
+<select id="ShowTabs" class="ShowTabs">
+   <option value="true">true</option>
+   <option value="false">false</option>
+
+</select>
+
+
+   <br>
    <input list="languages" class="languages" value="visual-basic">
    <br>
    <textarea placeholder="Public Module a
-      Public sub main() 
-      Dim abc = '%ABC%' 
-      msgbox(abc) 
-      End sub 
-      End module"></textarea>
+    Public sub main() 
+        Dim abc = '%ABC%' 
+        msgbox(abc) 
+    End sub 
+End module"></textarea>
    <br><br>
    <input list="languages" class="languages" value="csharp">
    <br>
    <textarea
-      placeholder="Public Module a
-      Public sub main() 
-      Dim abc = '%ABC%' 
-      msgbox(abc) 
-      End sub 
-      End module"></textarea><br>
+      placeholder="public static class a
+{
+    public static void main()
+    {
+        var abc = msgbox(abc);
+    }
+}"></textarea><br>
 </div>
 <button onclick="Insert()" style="width:75px;">+</button>
 <button onclick="Remove()" style="width:75px;">-</button><br><br><button onclick="Generate()" style="width:300px;">Generate</button>
 <br><br>
 <br><br>
-<pre><code id="result"></code></pre>
+<textarea style="background-color:white;border:0;resize:none" id="result"></textarea>
+
+
 <script src="Coder.js"></script>
+
+  
 <datalist id="languages">
    <option value="properties">
    <option value="asm6502">
